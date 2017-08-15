@@ -34,6 +34,7 @@ public class Game extends ApplicationAdapter {
 
     @Override
     public void create() {
+        FilePaths.checkOS();
         nFormat.setGroupingUsed(true);
         nFormat.setGroupingSize(3);
         gsm = new GameStateManager();
